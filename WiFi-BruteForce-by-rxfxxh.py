@@ -32,8 +32,8 @@ class Finder:
                 return True
             
 if __name__ == '__main__':
-    server_name = 'LYKENET-BATISTA'
-    f = open('pwords.txt', 'r')
+    server_name = 'x' #coloque o nome da rede a ser atacada aqui
+    f = open('pwords.txt', 'r') #altere o nome da wordlist, se preciso (caso saiba o que esta fazendo)
     txt = f.read()
     passwords = txt.splitlines()
     output = subprocess.check_output('sudo iwlist wlan0 scan', shell=True)
