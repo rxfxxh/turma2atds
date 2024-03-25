@@ -32,7 +32,7 @@ class Finder:
                 return True
             
 if __name__ == '__main__':
-    server_name = 'x' #coloque o nome da rede a ser atacada aqui
+    server_name = 'x' #coloque o nome da rede a ser atacada aqui, dentro da string
     f = open('pwords.txt', 'r') #altere o nome da wordlist, se preciso (caso saiba o que esta fazendo)
     txt = f.read()
     passwords = txt.splitlines()
